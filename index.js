@@ -15,13 +15,11 @@ let displayResult = document.querySelector("#displayResult");
 
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
-  
   let countDown = document.querySelector("#countDownContainer");
- 
   let counter = document.querySelector("#counter");
   let counterNum = 2;
   countDown.classList.remove("hidden");
-  countDown.classList.add("hidden");
+  countDown.classList.add("flex");
 
   let x = setInterval(() => {
     if (counterNum < 0) {
